@@ -9,42 +9,50 @@
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <h1 class="logo">CityCare</h1>
+<!-- Header -->
+<header class="site-header sticky-header">
+  <div class="layout-wrapper header-flex">
+    <h1 class="brand-mark">CityCare</h1>
     <nav>
-      <ul>
-       <li><a href="./index.html">Home</a></li>
-        <li><a href="./department.html">Departments</a></li>
-        <li><a href="./doctors.html">Doctors</a></li>
-        <li><a href="./appointment.html">Appointment</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html" class="active">Appointment</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<section class="about">
-  <div class="container">
-    <h2>Book an Appointment</h2>
-    <form class="appointment-form">
-      <input type="text" placeholder="Your Full Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <input type="tel" placeholder="Your Phone Number" required />
-      <select required>
+<!-- Appointment Section -->
+<section class="layout-wrapper">
+  <h2 style="color:#004aad; text-align:center;">Book an Appointment</h2>
+  <p style="text-align:center; margin-bottom:1.5rem;">
+    Schedule your visit with our expert doctors by filling in the form below.
+  </p>
+  <form class="appointment-form">
+    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+      <input type="text" placeholder="Your Full Name" required style="flex:1 1 48%;" />
+      <input type="email" placeholder="Your Email" required style="flex:1 1 48%;" />
+    </div>
+    <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+      <input type="tel" placeholder="Your Phone Number" required style="flex:1 1 48%;" />
+      <select required style="flex:1 1 48%;">
         <option value="">Select Department</option>
         <option value="cardiology">Cardiology</option>
         <option value="neurology">Neurology</option>
         <option value="orthopedics">Orthopedics</option>
         <option value="pediatrics">Pediatrics</option>
       </select>
-      <input type="date" required />
-      <button type="submit" class="btn">Submit</button>
-    </form>
-  </div>
+    </div>
+    <input type="date" required />
+    <button type="submit" class="action-btn" style="border:none;">Submit</button>
+  </form>
 </section>
 
-<footer>
+<!-- Footer -->
+<footer class="site-footer">
   <p>&copy; 2025 CityCare Hospital. All rights reserved.</p>
 </footer>
 

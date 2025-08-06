@@ -10,80 +10,115 @@
 <body>
 
   <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 class="logo">CityCare</h1>
+  <header class="site-header sticky-header">
+    <div class="layout-wrapper header-flex">
+      <h1 class="brand-mark">CityCare</h1>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
+        <ul class="nav-menu">
+          <li><a href="./index.html" class="active">Home</a></li>
           <li><a href="./department.html">Departments</a></li>
           <li><a href="./doctors.html">Doctors</a></li>
-          <li><a href="appointment.html">Appointment</a></li>
+          <li><a href="./appointment.html">Appointment</a></li>
           <li><a href="./contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<section class="hero">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h2>Your Health, Our Priority</h2>
-    <p>World-class care, close to home</p>
-    <a href="appointment.html" class="btn">Book Appointment</a>
+  <!-- Hero Section -->
+  <section class="intro-banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-text left-align">
+      <h2>Your Health, Our Priority</h2>
+      <p>World-class care, close to home with compassionate medical experts.</p>
+      <a href="appointment.html" class="action-btn">Book Appointment</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+<section class="about">
+  <div class="layout-wrapper two-column">
+    <div class="about-text">
+      <h2>About CityCare Hospital</h2>
+      <p>CityCare is a multispecialty hospital committed to delivering exceptional healthcare with state-of-the-art technology, compassionate professionals, and 24/7 emergency services.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://www.tagmedstaffing.com/wp-content/uploads/2023/12/shutterstock_786971899-1024x683.jpg" alt="CityCare Hospital">
+    </div>
   </div>
 </section>
 
-  <!-- About Section -->
-  <section class="about">
-    <div class="container">
-      <h2>About CityCare Hospital</h2>
-      <p>CityCare is a multispecialty hospital committed to delivering exceptional healthcare with state-of-the-art technology, compassionate professionals, and 24/7 emergency services.</p>
+
+  <!-- Why Trust Us -->
+  <section class="trust-section">
+    <div class="layout-wrapper">
+      <h2>Why Trust Us</h2>
+      <div class="section-grid trust-grid">
+        <div class="trust-card">
+          <img src="https://st.depositphotos.com/1031343/2949/v/950/depositphotos_29495721-stock-illustration-20-years-experience-stamp.jpg" alt="Experience">
+          <h3>20+ Years of Experience</h3>
+          <p>Providing expert healthcare backed by decades of trusted service.</p>
+        </div>
+        <div class="trust-card">
+          <img src="https://www.houstoncpo.com/wp-content/uploads/2024/12/successful-medical-team1-1.jpg" alt="Doctors">
+          <h3>Qualified Specialists</h3>
+          <p>Our team consists of highly trained and certified medical professionals.</p>
+        </div>
+        <div class="trust-card">
+          <img src="https://t4.ftcdn.net/jpg/04/00/70/65/360_F_400706547_wsgyCBYo3FwW9ySQXd42fEMureL6vUnh.jpg" alt="24/7 Service">
+          <h3>24/7 Emergency Care</h3>
+          <p>Always here to serve you in any medical emergency.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Departments -->
-  <section class="departments">
-    <div class="container">
+  <section class="departments-section alt-bg">
+    <div class="layout-wrapper">
       <h2>Our Departments</h2>
-      <div class="grid">
-        <div class="card">
+      <div class="section-grid">
+        <div class="info-tile">
           <img src="./images/cardiology.png" alt="Cardiology">
           <h3>Cardiology</h3>
+          <p>Expert care for heart health using advanced treatments.</p>
         </div>
-        <div class="card">
+        <div class="info-tile">
           <img src="./images/neurology.png" alt="Neurology">
           <h3>Neurology</h3>
+          <p>Comprehensive care for brain and nervous system disorders.</p>
         </div>
-        <div class="card">
+        <div class="info-tile">
           <img src="./images/orthopedics.png" alt="Orthopedics">
           <h3>Orthopedics</h3>
+          <p>Advanced orthopedic care for bones, joints, and spine.</p>
         </div>
-        <div class="card">
+        <div class="info-tile">
           <img src="./images/pediatric.png" alt="Pediatrics">
           <h3>Pediatrics</h3>
+          <p>Specialized care for infants, children, and adolescents.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Doctors -->
-  <section class="doctors">
-    <div class="container">
+  <section class="doctors-section">
+    <div class="layout-wrapper">
       <h2>Meet Our Specialists</h2>
-      <div class="grid">
-        <div class="card">
-          <img src="./images/cardiologist.png" alt="Dr. Sarah Khan">
+      <div class="section-grid">
+        <div class="doctor-card">
+          <img src="./images/cardiologist.png" alt="Dr. Sarah Khan" class="doctor-photo">
           <h3>Dr. Sarah Khan</h3>
           <p>Cardiologist</p>
         </div>
-        <div class="card">
-          <img src="./images/neurologist.png" alt="Dr. Ali Raza">
+        <div class="doctor-card">
+          <img src="./images/neurologist.png" alt="Dr. Ali Raza" class="doctor-photo">
           <h3>Dr. Ali Raza</h3>
           <p>Neurologist</p>
         </div>
-        <div class="card">
-          <img src="./images/pediatrician.png" alt="Dr. Ayesha Ahmed">
+        <div class="doctor-card">
+          <img src="./images/pediatrician.png" alt="Dr. Ayesha Ahmed" class="doctor-photo">
           <h3>Dr. Ayesha Ahmed</h3>
           <p>Pediatrician</p>
         </div>
@@ -91,8 +126,29 @@
     </div>
   </section>
 
+  <!-- Client Reviews -->
+  <section class="reviews-section alt-bg">
+    <div class="layout-wrapper">
+      <h2>What Our Patients Say</h2>
+      <div class="section-grid">
+        <div class="review-card">
+          <p>"CityCare saved my father's life. The doctors are skilled, and the staff is incredibly caring."</p>
+          <h4>- Ahmed Khan</h4>
+        </div>
+        <div class="review-card">
+          <p>"The best hospital experience I’ve ever had. Clean, professional, and very supportive."</p>
+          <h4>- Sana Malik</h4>
+        </div>
+        <div class="review-card">
+          <p>"From the moment I entered, I felt cared for. They truly put patients first."</p>
+          <h4>- Bilal Hussain</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Footer -->
-  <footer>
+  <footer class="site-footer">
     <p>&copy; 2025 CityCare Hospital. All rights reserved.</p>
   </footer>
 

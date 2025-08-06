@@ -9,33 +9,46 @@
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <h1 class="logo">CityCare</h1>
+<!-- Header -->
+<header class="site-header sticky-header">
+  <div class="layout-wrapper header-flex">
+    <h1 class="brand-mark">CityCare</h1>
     <nav>
-      <ul>
-       <li><a href="./index.html">Home</a></li>
-        <li><a href="./department.html">Departments</a></li>
-        <li><a href="./doctors.html">Doctors</a></li>
-        <li><a href="./appointment.html">Appointment</a></li>
-        <li><a href="./contact.html">Contact</a></li>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="doctors.html">Doctors</a></li>
+        <li><a href="appointment.html">Appointment</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<section class="about">
-  <div class="container">
-    <h2>Contact Us</h2>
-    <p><strong>Email:</strong> info@citycare.com</p>
-    <p><strong>Phone:</strong> +92 300 1234567</p>
-    <p><strong>Location:</strong> Main Blvd, Lahore, Pakistan</p>
-    <br>
-    <img src="./images/map.png" alt="Map" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 10px;">
+<!-- Contact Section -->
+<section class="layout-wrapper">
+  <h2 style="color:#004aad; text-align:center;">Contact Us</h2>
+  <p style="text-align:center; margin-bottom:2rem;">
+    We are here to help you with any inquiries. Reach us through the following contact details.
+  </p>
+
+  <div class="two-column" style="align-items:flex-start;">
+    <div style="flex:1 1 50%;">
+      <p><strong>Email:</strong> info@citycare.com</p>
+      <p><strong>Phone:</strong> +92 300 1234567</p>
+      <p><strong>Location:</strong> Main Blvd, Lahore, Pakistan</p>
+      <p style="margin-top:1rem;">
+        Our support team is available 24/7 to assist you. Feel free to call or email us anytime.
+      </p>
+    </div>
+    <div style="flex:1 1 50%;">
+      <img src="./images/map.png" alt="Map Location" style="width:100%; max-height:350px; object-fit:cover; border-radius:10px;">
+    </div>
   </div>
 </section>
 
-<footer>
+<!-- Footer -->
+<footer class="site-footer">
   <p>&copy; 2025 CityCare Hospital. All rights reserved.</p>
 </footer>
 
