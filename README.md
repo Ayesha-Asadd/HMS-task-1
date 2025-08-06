@@ -87,7 +87,4 @@ This project is licensed under the **MIT License** – you are free to use, modi
 ---
 
 💙 **CityCare Hospital Website** – A clean, modern, and professional healthcare website template for hospitals, clinics, and medical centers.
-```
 
-
-Do you want me to do that next?
